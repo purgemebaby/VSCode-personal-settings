@@ -1,0 +1,141 @@
+// Ok so, I have a lot of settings but i'm already still working on it because I think it could be more customized. You are free to change it as you want, I hope you like it.
+
+{
+  //python
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.typeCheckingMode": "off",
+
+  //editor
+  "breadcrumbs.enabled": false,
+  "editor.cursorBlinking": "expand",
+  "editor.fontSize": 17,
+  "editor.renderLineHighlight": "all",
+  "editor.smoothScrolling": true,
+  "editor.wordWrap": "on",
+  "editor.guides.bracketPairs": false,
+  "editor.acceptSuggestionOnEnter": "smart",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.fontFamily": "Inter, Fira Code",
+  "editor.cursorStyle": "line",
+  "editor.cursorWidth": 3,
+  "editor.linkedEditing": true,
+  "editor.lineNumbers": "on",
+  "editor.insertSpaces": false,
+  "editor.hover.enabled": true,
+  "editor.fontLigatures": true,
+  "editor.suggestSelection": "first",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.minimap.enabled": false,
+  "editor.formatOnSave": true,
+  "editor.inlayHints.fontFamily": "Inter",
+  "editor.scrollbar.vertical": "auto",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.parameterHints.enabled": false,
+
+  //terminal
+  "terminal.integrated.fontSize": 17,
+  "terminal.integrated.fontFamily": "Hacker",
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.defaultProfile.osx": "bash",
+  "terminal.integrated.fontWeightBold": "normal",
+  "terminal.integrated.drawBoldTextInBrightColors": false,
+  "terminal.integrated.showExitAlert": true,
+
+  //workbench
+  "workbench.colorTheme": "Bearded Theme Coffee Reversed",
+  "workbench.settings.editor": "json",
+  "workbench.sideBar.location": "left",
+  "workbench.activityBar.location": "top",
+  "workbench.editor.closeEmptyGroups": true,
+  "workbench.iconTheme": "icons",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.showTabs": "multiple",
+  "workbench.statusBar.visible": true,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+
+  //files
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 3000,
+  "files.exclude": {
+    "**/.git": false,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": false,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/README.md": true,
+    "**/.gitignore": true,
+    "**/.prettierignore": true
+  },
+
+  //window
+  "window.zoomLevel": -0.5,
+  "window.title": "${rootName} - ${{activeEditorShort} - (｡◕‿‿◕｡)",
+  "window.closeWhenEmpty": true,
+  "window.commandCenter": true,
+
+  //explorer
+  "explorer.compactFolders": false,
+  "explorer.openEditors.sortOrder": "alphabetical",
+  "explorer.confirmDragAndDrop": false,
+  "explorer.decorations.colors": true,
+  "explorer.incrementalNaming": "simple",
+
+  //markdown
+  "markdown.preview.fontFamily": "Inter",
+  "markdown.math.enabled": true,
+
+  //scm
+  "scm.inputFontFamily": "Inter",
+
+  //Notebook
+  "notebook.output.fontFamily": "Inter",
+
+  //chat
+  "chat.editor.fontFamily": "Inter",
+  "chat.editor.fontSize": 15,
+  "chat.editor.wordWrap": "on",
+
+  //debug
+  "debug.console.fontFamily": "Fira Code",
+  "debug.closeReadonlyTabsOnEnd": true,
+  "debug.console.wordWrap": true,
+  "debug.enableStatusBarColor": true,
+
+  // Apc
+  "apc.statusBar": {
+    "position": "bottom"
+  },
+
+  "apc.activityBar": {
+    "position": "bottom",
+    "hideSettings": true,
+    "size": 48,
+    "itemMargin": 8,
+    "itemSize": 32
+  },
+
+  "apc.menubar.compact": true,
+
+  "apc.electron": {
+    "titleBarStyle": "hiddenInset",
+    "trafficLightPosition": {
+      "x": 11,
+      "y": 10
+    },
+    "frame": false
+  },
+
+  "apc.header": {
+    "height": 24
+  },
+
+  "apc.stylesheet": {
+    ".title-label > h2": "display: none",
+    ".editor-actions": "display: none",
+    ".nosidebar .inline-tabs-placeholder": "width: 75px",
+    ".split-view-view:first-child .pane-header": "display: none !important;",
+    ".monaco-list-row": "border-radius: 4px;",
+    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none;"
+  }
+}
