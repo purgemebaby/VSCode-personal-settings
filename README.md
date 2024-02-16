@@ -15,7 +15,7 @@ related to extensions and shortcuts.
 
 ---
 
-### 📚 Setup and install
+### 📚 Setup and installation
 1. Go to [this repository](https://github.com/purgemebaby/VSCode-personal-settings).
 2. Click __"Code"__ to reveal the HTTPS, GitHub CLI or Download ZIP option.
 3. Open up your system __GitBash__ (Windows) or your own Linux/GNU terminal, setup a location that suits you better.
