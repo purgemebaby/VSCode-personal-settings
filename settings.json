@@ -2,41 +2,48 @@
 
 {
   //python
-  "python.analysis.autoImportCompletions": true,
-  "python.analysis.typeCheckingMode": "off",
+  "python.analysis.autoImportCompletions": true, // Enable auto import completions.
+  "python.analysis.typeCheckingMode": "off", // Show diagnostics for invalid syntax, unresolved imports, and other typechecking errors.
 
   //editor
-  "breadcrumbs.enabled": false,
-  "editor.cursorBlinking": "expand",
-  "editor.fontSize": 17,
+  "breadcrumbs.enabled": false, // This show a path of the file you are editing at the top of the editor (Very useless)
+  "editor.cursorBlinking": "expand", // This is the cursor animation.
+  "editor.fontSize": 14,
   "editor.renderLineHighlight": "all",
   "editor.smoothScrolling": true,
-  "editor.wordWrap": "on",
+  "editor.guides.bracketPairsHorizontal": "active",
+  "editor.wordWrap": "on", // Lines will break when they reach the end of the editor width cap.
   "editor.guides.bracketPairs": false,
-  "editor.acceptSuggestionOnEnter": "smart",
+  "editor.acceptSuggestionOnEnter": "off", // This will accept the suggestion when you press enter.
   "editor.cursorSmoothCaretAnimation": "on",
-  "editor.fontFamily": "Inter, Fira Code",
+  "editor.fontFamily": "Consolas",
   "editor.cursorStyle": "line",
   "editor.cursorWidth": 3,
-  "editor.linkedEditing": true,
-  "editor.lineNumbers": "on",
-  "editor.insertSpaces": false,
+  "editor.linkedEditing": true, // This will link the editing of the same word in the same file (like html <> tags)
+  "editor.lineNumbers": "interval",
+  "editor.insertSpaces": true, // This will insert spaces instead of tabs.
   "editor.hover.enabled": true,
-  "editor.fontLigatures": true,
+  "editor.fontLigatures": true, // This will enable the font ligatures. It depends on the font you are using.
   "editor.suggestSelection": "first",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.minimap.enabled": false,
+  "editor.minimap.enabled": false, //Useless feature, don't need it for nothing.
   "editor.formatOnSave": true,
+  "editor.renderControlCharacters": true,
+  "editor.renderWhitespace": "all",
+  "editor.tabSize": 4, // I use 4 cuz it's the proper way to use it in python. Change it following the syntax rules of the language you are using.
+  "editor.inlineSuggest.fontFamily": "Consolas",
+  "editor.tabCompletion": "on",
+  "editor.stickyScroll.enabled": true,
   "editor.inlayHints.fontFamily": "Inter",
   "editor.scrollbar.vertical": "auto",
-  "editor.bracketPairColorization.enabled": true,
-  "editor.parameterHints.enabled": false,
+  "editor.bracketPairColorization.enabled": true, // This will colorize the brackets.
+  "editor.parameterHints.enabled": false, // Enable a window that shows parameter doc and info of an object.
 
   //terminal
-  "terminal.integrated.fontSize": 17,
-  "terminal.integrated.fontFamily": "Hacker",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontFamily": "Hack Nerd Font",
   "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.defaultProfile.osx": "bash",
+  "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.drawBoldTextInBrightColors": false,
   "terminal.integrated.showExitAlert": true,
@@ -47,7 +54,9 @@
   "workbench.sideBar.location": "left",
   "workbench.activityBar.location": "top",
   "workbench.editor.closeEmptyGroups": true,
+  "workbench.editor.highlightModifiedTabs": true,
   "workbench.iconTheme": "icons",
+  "workbench.list.smoothScrolling": true,
   "workbench.editor.enablePreview": false,
   "workbench.editor.showTabs": "multiple",
   "workbench.statusBar.visible": true,
@@ -59,6 +68,7 @@
   "files.exclude": {
     "**/.git": false,
     "**/.svn": true,
+    "**/LICENSE*": true,
     "**/.hg": true,
     "**/CVS": false,
     "**/.DS_Store": true,
@@ -68,11 +78,19 @@
     "**/.prettierignore": true
   },
 
+  //prettier (formmatting extension)
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "prettier.enable": true,
+  "prettier.printWidth": 80,
+  "prettier.useTabs": false,
+
+
   //window
-  "window.zoomLevel": -0.5,
-  "window.title": "${rootName} - ${{activeEditorShort} - (｡◕‿‿◕｡)",
+  "window.zoomLevel": -0.4,
+  "window.title": "${rootName} - ${{activeEditorShort} - (｡◕‿‿◕｡)", // This will show the name of the file you are editing at the top of the window. Edit as you wish. There are some regular expressions you can use.
   "window.closeWhenEmpty": true,
-  "window.commandCenter": true,
+  "window.commandCenter": true, // Show command palette together with the window title
 
   //explorer
   "explorer.compactFolders": false,
@@ -86,14 +104,14 @@
   "markdown.math.enabled": true,
 
   //scm
-  "scm.inputFontFamily": "Inter",
+  "scm.inputFontFamily": "Consolas",
 
   //Notebook
   "notebook.output.fontFamily": "Inter",
 
   //chat
-  "chat.editor.fontFamily": "Inter",
-  "chat.editor.fontSize": 15,
+  "chat.editor.fontFamily": "Consolas",
+  "chat.editor.fontSize": 14,
   "chat.editor.wordWrap": "on",
 
   //debug
@@ -102,7 +120,7 @@
   "debug.console.wordWrap": true,
   "debug.enableStatusBarColor": true,
 
-  // Apc
+  // Apc. Idk why this doesn't work now. I think it's because of the new update of VSCode. I'll try to fix it if they update the extension.
   "apc.statusBar": {
     "position": "bottom"
   },
