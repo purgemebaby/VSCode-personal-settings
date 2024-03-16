@@ -24,6 +24,8 @@ related to extensions and shortcuts.
 6. Finally, there is an option on VSCode on settings to see them as a .json file. Open it and then copy the code of the custom one and paste.
 7. As a suggestion, breakdown and investigate every setting in this file, search by your own to make a comfy environment to work and enjoy it.
 
+---
+
 ### 🗂️ Extensions and Themes 
 Here's a list with the __extensions__ I'm using right now:
 - Python related: _Pylance_, _Python_, _Python Debugger_, _Python Indent_.
