@@ -16,10 +16,10 @@
   "editor.guides.bracketPairs": false,
   "editor.acceptSuggestionOnEnter": "off", // This will accept the suggestion when you press enter.
   "editor.cursorSmoothCaretAnimation": "on",
-  "editor.fontFamily": "Consolas",
+  "editor.fontFamily": "JetBrains Mono", // This is the font I use. You can change it to whatever you want.
   "editor.cursorStyle": "line",
   "editor.cursorWidth": 3,
-  "editor.linkedEditing": true, // This will link the editing of the same word in the same file (like html <> tags)
+  "editor.linkedEditing": true, // This will link the editing of the same word in the same file (like html </> tags)
   "editor.lineNumbers": "interval",
   "editor.insertSpaces": true, // This will insert spaces instead of tabs.
   "editor.hover.enabled": true,
@@ -30,37 +30,41 @@
   "editor.formatOnSave": true,
   "editor.renderControlCharacters": true,
   "editor.renderWhitespace": "all",
-  "editor.tabSize": 4, // I use 4 cuz it's the proper way to use it in python. Change it following the syntax rules of the language you are using.
-  "editor.inlineSuggest.fontFamily": "Consolas",
+  "editor.tabSize": 4, // I use 4 cuz it's the proper way to use it in python (PEP-8). Change it following the syntax rules of the language you are using.
+  "editor.inlineSuggest.fontFamily": "JetBrains Mono",
   "editor.tabCompletion": "on",
   "editor.stickyScroll.enabled": true,
-  "editor.inlayHints.fontFamily": "Inter",
+  "editor.inlayHints.fontFamily": "JetBrains Mono",
   "editor.scrollbar.vertical": "auto",
   "editor.bracketPairColorization.enabled": true, // This will colorize the brackets.
   "editor.parameterHints.enabled": false, // Enable a window that shows parameter doc and info of an object.
 
   //terminal
-  "terminal.integrated.fontSize": 16,
-  "terminal.integrated.fontFamily": "Hack Nerd Font",
-  "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.defaultProfile.osx": "zsh",
-  "terminal.integrated.fontWeightBold": "normal",
-  "terminal.integrated.drawBoldTextInBrightColors": false,
+  "terminal.integrated.fontSize": 18,
+  "terminal.integrated.fontFamily": "Kode Mono",
+  "terminal.integrated.cursorStyle": "underline",
+  "terminal.integrated.defaultProfile.osx": "bash",
+  "terminal.integrated.fontWeightBold": "900",
+  "terminal.integrated.drawBoldTextInBrightColors": true,
   "terminal.integrated.showExitAlert": true,
 
   //workbench
-  "workbench.colorTheme": "Bearded Theme Coffee Reversed",
   "workbench.settings.editor": "json",
   "workbench.sideBar.location": "left",
-  "workbench.activityBar.location": "top",
-  "workbench.editor.closeEmptyGroups": true,
+  "workbench.activityBar.iconClickBehavior": "focus",
+  "workbench.activityBar.location": "side",
+  "zenMode.hideActivityBar": true,
+  "workbench.editor.closeEmptyGroups": false,
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.iconTheme": "icons",
   "workbench.list.smoothScrolling": true,
+  "workbench.tree.indent": 10,
+  "workbench.colorTheme": "Bearded Theme Coffee Reversed",
   "workbench.editor.enablePreview": false,
   "workbench.editor.showTabs": "multiple",
   "workbench.statusBar.visible": true,
   "workbench.editor.enablePreviewFromQuickOpen": false,
+  "window.density.editorTabHeight": "default",
 
   //files
   "files.autoSave": "afterDelay",
@@ -85,9 +89,8 @@
   "prettier.printWidth": 80,
   "prettier.useTabs": false,
 
-
   //window
-  "window.zoomLevel": -0.4,
+  "window.zoomLevel": -0.6,
   "window.title": "${rootName} - ${{activeEditorShort} - (｡◕‿‿◕｡)", // This will show the name of the file you are editing at the top of the window. Edit as you wish. There are some regular expressions you can use.
   "window.closeWhenEmpty": true,
   "window.commandCenter": true, // Show command palette together with the window title
@@ -100,60 +103,25 @@
   "explorer.incrementalNaming": "simple",
 
   //markdown
-  "markdown.preview.fontFamily": "Inter",
+  "markdown.preview.fontFamily": "FiraMono Nerd Font",
   "markdown.math.enabled": true,
 
   //scm
-  "scm.inputFontFamily": "Consolas",
+  "scm.inputFontFamily": "default",
 
   //Notebook
-  "notebook.output.fontFamily": "Inter",
+  "notebook.output.fontFamily": "Noto Sans Mono",
 
   //chat
-  "chat.editor.fontFamily": "Consolas",
+  "chat.editor.fontFamily": "FiraMono Nerd Font",
   "chat.editor.fontSize": 14,
   "chat.editor.wordWrap": "on",
 
   //debug
-  "debug.console.fontFamily": "Fira Code",
+  "debug.console.fontFamily": "FireMono Nerd Font",
   "debug.closeReadonlyTabsOnEnd": true,
   "debug.console.wordWrap": true,
   "debug.enableStatusBarColor": true,
-
-  // Apc. Idk why this doesn't work now. I think it's because of the new update of VSCode. I'll try to fix it if they update the extension.
-  "apc.statusBar": {
-    "position": "bottom"
-  },
-
-  "apc.activityBar": {
-    "position": "bottom",
-    "hideSettings": true,
-    "size": 48,
-    "itemMargin": 8,
-    "itemSize": 32
-  },
-
-  "apc.menubar.compact": true,
-
-  "apc.electron": {
-    "titleBarStyle": "hiddenInset",
-    "trafficLightPosition": {
-      "x": 11,
-      "y": 10
-    },
-    "frame": false
-  },
-
-  "apc.header": {
-    "height": 24
-  },
-
-  "apc.stylesheet": {
-    ".title-label > h2": "display: none",
-    ".editor-actions": "display: none",
-    ".nosidebar .inline-tabs-placeholder": "width: 75px",
-    ".split-view-view:first-child .pane-header": "display: none !important;",
-    ".monaco-list-row": "border-radius: 4px;",
-    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none;"
-  }
+  "glassit.alpha": 240,
+  "window.menuBarVisibility": "compact"
 }
