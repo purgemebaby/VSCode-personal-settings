@@ -9,8 +9,7 @@
 ---
 ### 📋 Description
 
-As you can see in the description, here is a .json file customized for your VSCode Editor. I will comment on it to give a brief
-explanation of what every feature does on this file. Also, since this is my usual code editor, I'll prolly add more settings
+As you can see, here is a .json file customized for your VSCode Editor. Since this is my usual code editor, I'll prolly add more settings
 related to extensions and shortcuts.
 
 ---
